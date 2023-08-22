@@ -1,9 +1,13 @@
-import { useState } from "react";
 import "./App.css";
-import "../src/components/Navbar";
-
+import Navbar from "../src/components/Navbar";
+import HeroSection from "../src/components/HeroSection";
 function App() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
+  );
 }
 
 export default App;
