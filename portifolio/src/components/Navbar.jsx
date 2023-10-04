@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/icons8-source-code-64.png";
 
 function Navbar() {
   return (
@@ -6,7 +7,7 @@ function Navbar() {
       <nav className="relative container mx-auto p-6">
         <div className="flex items-center justify-between">
           <div className="pt 2">
-            <img src="../public/assets/icons8-source-code-64.png" alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#" className="hover:text-darkGrayishBlue">
@@ -27,7 +28,7 @@ function Navbar() {
           </div>
           <a
             href="#"
-            className="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            className="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
           >
             Get Started
           </a>
